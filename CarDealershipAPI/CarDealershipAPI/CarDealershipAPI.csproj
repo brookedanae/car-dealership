@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>5f5761c2-8c33-4802-8f7f-b808aa6371b2</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data1\**" />
+    <Content Remove="Data1\**" />
+    <EmbeddedResource Remove="Data1\**" />
+    <None Remove="Data1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.14" />
+  </ItemGroup>
+
+
+</Project>
